@@ -195,7 +195,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/03/08/hello-world/"},{"title":"我的第一篇文章","path":"2023/03/08/我的第一篇文章/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/03/09/hello-world/"},{"title":"我的第一篇文章","path":"2023/03/08/我的第一篇文章/"},{"title":"科技是第一生产力","path":"2023/03/09/科技是第一生产力/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -260,13 +260,13 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>分类</span>
           </div>
         </a>
         <a href="/tags">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>标签</span>
           </div>
         </a>
@@ -329,7 +329,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>2 篇</span>
+        <span>3 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -352,7 +352,7 @@
   <div class="categories">
   <h2 class="categories-title">小站分类</h2>
   <div class="categories-list">
-    
+    <ul class="categories-list"><li class="categories-list-item"><a class="categories-list-link" href="/categories/%E7%A7%91%E5%AD%A6/">科学</a><span class="categories-list-count">1</span></li></ul>
   </div>
 </div>
 
